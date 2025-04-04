@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resale Properties | NEWMARK</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Using Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="images/Logo.png" alt="NEWMARK" class="logo-img">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="premium.html">Premium</a></li>
+          <li><a href="resale.html">Resale</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background: url('images/New Mark-Brand Direction (2)_page-0022.jpg') no-repeat center center/cover;">
+    <div class="hero-content">
+      <div class="investment-text">RESALE PROPERTIES</div>
+      <div class="brand-statement">
+        <p>FIND VALUE AND CHARACTER IN OUR CURATED RESALE COLLECTION</p>
+        <p>EXCEPTIONAL HOMES WITH ESTABLISHED COMMUNITIES AND CHARM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resale Filters Section -->
+  <section class="search-section">
+    <div class="container">
+      <h2>Find Your Resale Property</h2>
+      <div class="search-container">
+        <form class="advanced-search-form">
+          <div class="search-row">
+            <div class="search-group">
+              <label>Location</label>
+              <select>
+                <option value="">Select Location</option>
+                <option value="downtown">Downtown</option>
+                <option value="suburbs">Suburbs</option>
+                <option value="gated">Gated Communities</option>
+                <option value="compounds">Compounds</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <label>Property Type</label>
+              <select>
+                <option value="">All Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="villa">Villa</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="chalet">Chalet</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <label>Price Range</label>
+              <div class="price-inputs">
+                <input type="number" placeholder="Min Price">
+                <span>to</span>
+                <input type="number" placeholder="Max Price">
+              </div>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <div class="search-group">
+              <label>Bedrooms</label>
+              <select>
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <label>Property Age</label>
+              <select>
+                <option value="">Any</option>
+                <option value="0-5">0-5 years</option>
+                <option value="5-10">5-10 years</option>
+                <option value="10-20">10-20 years</option>
+                <option value="20+">20+ years</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <label>Renovation Status</label>
+              <select>
+                <option value="">Any</option>
+                <option value="renovated">Fully Renovated</option>
+                <option value="partial">Partially Renovated</option>
+                <option value="original">Original Condition</option>
+                <option value="fixer">Needs Renovation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <div class="search-group amenities">
+              <label>Amenities</label>
+              <div class="amenities-grid">
+                <label class="checkbox-label">
+                  <input type="checkbox"> Parking
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Swimming Pool
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Garden
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Security
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Elevator
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Balcony
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Storage
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Near Schools
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox"> Near Transport
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-actions">
+            <button type="submit" class="search-button">Search Resale Properties</button>
+            <button type="reset" class="reset-button">Reset Filters</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Resale Properties -->
+  <section class="featured-properties">
+    <div class="container">
+      <h2>Featured Resale Properties</h2>
+      <div class="properties-grid">
+        <!-- Property 1 -->
+        <div class="property-card">
+          <div class="property-image">
+            <div class="property-tag">Recently Listed</div>
+            <img src="https://placehold.co/600x400/000000/FFFFFF.png?text=Family+Home" alt="Family Home">
+          </div>
+          <div class="property-details">
+            <h3>Spacious Family Villa</h3>
+            <p class="property-location"><i class="fas fa-map-marker-alt"></i> El Rehab City, Cairo</p>
+            <p class="property-price">$350,000</p>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 4 Beds</span>
+              <span><i class="fas fa-bath"></i> 3 Baths</span>
+              <span><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
+            </div>
+            <p class="property-description">Well-maintained family villa in established community with garden, private parking, and swimming pool access. Close to schools, shopping centers, and medical facilities.</p>
+            <a href="#" class="view-property">View Property</a>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card">
+          <div class="property-image">
+            <div class="property-tag">Renovated</div>
+            <img src="https://placehold.co/600x400/000000/FFFFFF.png?text=Modern+Apartment" alt="Modern Apartment">
+          </div>
+          <div class="property-details">
+            <h3>Renovated Downtown Apartment</h3>
+            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Central Cairo</p>
+            <p class="property-price">$220,000</p>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 3 Beds</span>
+              <span><i class="fas fa-bath"></i> 2 Baths</span>
+              <span><i class="fas fa-ruler-combined"></i> 1,650 sq ft</span>
+            </div>
+            <p class="property-description">Completely renovated apartment with modern finishes, new kitchen and bathrooms, and stunning city views. Located in the heart of downtown with easy access to public transportation.</p>
+            <a href="#" class="view-property">View Property</a>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card">
+          <div class="property-image">
+            <div class="property-tag">Great Value</div>
+            <img src="https://placehold.co/600x400/000000/FFFFFF.png?text=Townhouse" alt="Townhouse">
+          </div>
+          <div class="property-details">
+            <h3>Corner Townhouse</h3>
+            <p class="property-location"><i class="fas fa-map-marker-alt"></i> El Shorouk City</p>
+            <p class="property-price">$275,000</p>
+            <div class="property-features">
+              <span><i class="fas fa-bed"></i> 4 Beds</span>
+              <span><i class="fas fa-bath"></i> 3 Baths</span>
+              <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+            </div>
+            <p class="property-description">Corner townhouse with extra garden space in a quiet family-friendly compound. Features include a spacious living area, covered parking, and proximity to community amenities.</p>
+            <a href="#" class="view-property">View Property</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-more-container">
+        <a href="#" class="view-more-button">View More Resale Properties</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Resale Section -->
+  <section class="resale-benefits">
+    <div class="container">
+      <h2>Why Choose Resale Properties</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Established Neighborhoods</h3>
+          <p>Resale properties are typically located in mature communities with developed infrastructure, amenities, and neighborhood character.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Move-in Ready</h3>
+          <p>Many resale properties are available for immediate occupancy, allowing you to settle in without the wait associated with new developments.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <h3>Price Advantage</h3>
+          <p>Often more competitively priced than new properties, resale homes can offer excellent value and potential for appreciation over time.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <h3>Mature Landscaping</h3>
+          <p>Enjoy established gardens, mature trees, and developed outdoor spaces that new properties may take years to achieve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Resale Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"NEWMARK helped us find the perfect resale property in an established neighborhood with excellent schools for our children. Their expertise made the process seamless and stress-free."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="https://placehold.co/100x100/000000/FFFFFF.png?text=Client" alt="Client">
+            </div>
+            <div class="author-details">
+              <h4>The Hassan Family</h4>
+              <p>El Rehab City Residents</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NEWMARK. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
