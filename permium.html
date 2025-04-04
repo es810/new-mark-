@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Properties - NEWMARK</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/Logo.jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="images/Logo.jpeg" alt="NEWMARK" class="logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="premium.html" class="active">Premium</a></li>
+        <li><a href="resale.html">Resale</a></li>
+        <li><a href="rent.html">Rent</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+    <div class="hero-content">
+      <h1>Experience Unrivaled Luxury</h1>
+      <p>Discover NEWMARK’s exclusive collection of premium properties.</p>
+      <a href="#featured" class="hero-btn">Explore Premium Listings</a>
+    </div>
+  </section>
+
+  <!-- Featured Premium Properties -->
+  <section class="featured-properties" id="featured">
+    <div class="container">
+      <h2>Our Premium Listings</h2>
+      <div class="properties-grid" id="properties-grid"></div> <!-- Dynamic content will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Why Choose Premium Section -->
+  <section class="premium-benefits">
+    <div class="container">
+      <h2>Why Choose NEWMARK Premium?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <i class="fas fa-star"></i>
+          <h3>Exclusive Locations</h3>
+          <p>Properties in the most sought-after destinations.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-gem"></i>
+          <h3>Unmatched Luxury</h3>
+          <p>Top-tier amenities and bespoke designs.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Investment Value</h3>
+          <p>High returns in premium real estate markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 NEWMARK. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Dynamic Properties -->
+  <script>
+    // Sample property data (this could come from an API)
+    const properties = [
+      {
+        title: "Ocean View Villa",
+        price: "₹7.5 Cr",
+        location: "Goa",
+        beds: 4,
+        baths: 5,
+        size: "3,500 sq ft",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        link: "villa-details.html"
+      },
+      {
+        title: "Skyline Penthouse",
+        price: "₹5.2 Cr",
+        location: "Mumbai",
+        beds: 3,
+        baths: 4,
+        size: "2,800 sq ft",
+        image: "https://images.unsplash.com/photo-1560185127-6ed189bf90a3",
+        link: "penthouse-details.html"
+      },
+      {
+        title: "Modern Mansion",
+        price: "₹12 Cr",
+        location: "Bangalore",
+        beds: 5,
+        baths: 6,
+        size: "5,000 sq ft",
+        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+        link: "mansion-details.html"
+      }
+    ];
+
+    // Function to render properties dynamically
+    function renderProperties() {
+      const grid = document.getElementById("properties-grid");
+      grid.innerHTML = ""; // Clear existing content
+
+      properties.forEach(property => {
+        const card = document.createElement("div");
+        card.classList.add("property-card");
+
+        card.innerHTML = `
+          <img src="${property.image}" alt="${property.title}" />
+          <div class="property-info">
+            <h3>${property.title}</h3>
+            <p>${property.price} • ${property.location}</p>
+            <ul class="property-details">
+              <li><i class="fas fa-bed"></i> ${property.beds} Beds</li>
+              <li><i class="fas fa-bath"></i> ${property.baths} Baths</li>
+              <li><i class="fas fa-ruler-combined"></i> ${property.size}</li>
+            </ul>
+            <a href="${property.link}">View Details</a>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    }
+
+    // Call the function when the page loads
+    window.onload = renderProperties;
+  </script>
+</body>
+</html>
